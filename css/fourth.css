@@ -1,0 +1,103 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.fourth{
+    width: 1519px;
+    height: 721px;
+
+}
+
+.fourth>.fourth-title{
+    width: 1400px;
+    height: 47.14;
+    font-size: 15px;
+    position: relative;
+}
+.fourth>.fourth-title>h1{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+/* .fourth>h1{
+    font-size: 50px;
+    float: left;
+} */
+.fourth>.fbottom{
+    display: flex;
+    flex-direction: row;
+}
+.fourth>.fbottom>.video{
+    width: 600px;
+    height: 338px;
+    /* float: left; */
+    margin-left: 70px;
+}
+.fourth>.fbottom>.video>h2{
+    font-size: 40px;
+}
+.fourth>.fbottom>.video>video{
+    width: 600px;
+    height: 338px;
+}
+.fourth>.fbottom>.gun{
+    width: 700px;
+    height: 510px;
+    /* float: left; */
+    margin-left: 80px;
+    background-color: white;
+}
+.fourth>.fbottom>.member{
+    width: 500px;
+    height: 500px;
+    margin: 0;
+    position: relative;
+    left: -400px;
+}
+.fourth>.fbottom>.member>div{
+    /* display: block; */
+    width: 200px;
+    height: 30px;
+    /* position: relative; */
+    left: 0px;
+
+}
+.fourth>.fbottom>.member>#mBa,#mBv,#mBe,#mB,#mBl,#mBr,#mBn,#mBi,#mBk,#mBm,#mBq,#mBs,#mBu{
+    /* display: block; */
+    width: 200px;
+    height: 30px;
+    /* position: relative; */
+    left: 0px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-name: roll2;
+}
+@keyframes roll2{
+    0%{transform: translate(0);}
+    50%{transform: translate(400px);}
+}
+.fourth>.fbottom>.member>.mB{
+    position: relative;
+    top: -123px;
+}
+.fourth>.fbottom>.member>#mBu,#mBv{
+    position: relative;
+    top: -538px;
+}
+.fourth>.fbottom>.member>#mBb,#mBd,#mBf,#mBh,#mBj,#mBg,#mBm,#mBp,#mBc,#mBt,#mBo{
+    /* display: block; */
+    width: 200px;
+    height: 30px;
+    position: relative;
+    left: 0px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-name: roll3;
+}
+@keyframes roll3{
+    0%{transform: translate(400px);}
+    50%{transform: translate(0px);}
+    100%{transform: translate(400px);}
+}

@@ -1,0 +1,127 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.third{
+    width: 1519px;
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+}
+.third>.ERP{
+    width: 360px;
+    height: 420px;
+    background: linear-gradient(270deg,#c9dae7,#ebeff9);
+    /* background-color: #c9dae7; */
+    margin-left: 70px;
+    /* float: left; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.third>.ERP>h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 40px;
+
+}
+.third>.ERP>h2{
+    font-size: 23px;
+    font-weight: 550;
+    color: #6593a8;
+    /* margin: 0; */
+    /* position: relative; */
+    left: 35px;
+    top: 5px;
+}
+.third>.ERP>img{
+    width: 300px;
+    height: 252.85px;
+    margin: 0;
+    margin-top: -30px;
+}
+.third>.ERP>p{
+    margin: 0;
+    margin-top: 40px;
+}
+.third>.tleft>.ttop{
+    display: flex;
+    flex-direction: row;
+}
+.third>.tleft>.ttop>.title{
+    width: 250px;
+    height: 200px;
+    /* float: left; */
+    background-color: #f2f2f2;
+    margin-left: 50px;
+    margin-right: 80px;
+    /* float: left; */
+    border-radius: 20px;
+}
+.third>.tleft>.ttop>.title>h1{
+    font-size: 35px;
+    position: relative;
+    left: 55px;
+    top: 55px;
+}
+.third>.tleft>.ttop>.six-program{
+    font-size: 19px;
+    width: 500px;
+    height: 200px;
+    /* float: left; */
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    text-align: center;
+}
+.third .tleft>.ttop>.six-program>p{
+    position: relative;
+    top: 30px;
+}
+.third .tleft>img{
+    width: 160px;
+    height: 170px;
+    float: left;
+}
+.third .tleft>.ywbd{
+    width: 880px;
+    height: 200px;
+    background: linear-gradient(90deg,#f1f2d0,#b1d8b4);
+    /* background-color: #b1d8b4; */
+    /* float: left; */
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.third>.tleft>.ywbd>img{
+    width: 160px;
+    height: 170px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+.third>.tleft>.ywbd>.ywenzi{
+    width: 560px;
+    height: 200px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.third>.tleft>.ywbd>.ywenzi>h1{
+    font-size: 30px;
+    margin: 0;
+    margin-top: 20px;
+}
+.third>.tleft>.ywbd>.ywenzi>h2{
+    font-size: 22px;
+    color: #6a9b71;
+    margin: 0;
+    left: 70px;
+    top: -20px;
+}
+.third>.tleft>.ywbd>.ywenzi>p{
+    margin-top: 20px;
+}

@@ -1,0 +1,192 @@
+*{
+    margin: 0 auto ;
+    padding: 0;
+}
+.second{
+    width: 1519px;
+    height: 721px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.second>h1{
+    margin-right: 100px;
+}
+.second>.lunbotu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.second>.lunbotu>.outer{
+    width: 1100px;
+    height: 450px;
+    margin: 0 auto;
+    /* padding: 10px 0; */
+    position: relative;
+    overflow: hidden;
+}
+.second>.lunbotu>.outer>.kuang{
+    width: 5500px;
+    height: 450px;
+    margin: 0 auto;
+    /* margin-left: 60px; */
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction:row ;
+  
+}
+
+.second>.lunbotu>.outer>.kuang>.one{
+    width: 1100px;
+    height: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.second>.lunbotu>.outer>.kuang>.one>img{
+    width: 500px;
+    height: 455.11px;
+    /* float: left; */
+}
+.second>.lunbotu>.outer>.kuang>.two>img{
+    width: 500px;
+    height: 455.11px;
+    /* float: left; */
+}
+.second>.lunbotu>.outer>.kuang>.three>img{
+    width: 500px;
+    height: 455.11px;
+    /* float: left; */
+}
+.second>.lunbotu>.outer>.kuang>.four>img{
+    width: 500px;
+    height: 455.11px;
+    /* float: left; */
+}
+.second>.lunbotu>.outer>.kuang>.five>img{
+    width: 500px;
+    height: 455.11px;
+    /* float: left; */
+}
+
+.second>.lunbotu>.outer>.kuang>.two{
+    width: 1100px;
+    height: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+   
+}
+.second>.lunbotu>.outer>.kuang>.three{
+    width: 1100px;
+    height: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+.second>.lunbotu>.outer>.kuang>.four{
+    width: 1100px;
+    height: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+   
+}
+.second>.lunbotu>.outer>.kuang>.five{
+    width: 1100px;
+    height: 450px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+.second>.lunbotu>.outer>.kuang>.one>.content1{
+    width: 500px;
+    height: 300px;
+    /* float: left; */
+    /* position: relative; */
+    /* left: 0; */
+}
+.second>.lunbotu>.outer>.kuang>.two>.content2{
+    width: 500px;
+    height: 300px;
+    /* float: left;
+    position: relative;
+    left: 0; */
+}
+.second>.lunbotu>.outer>.kuang>.three>.content3{
+    width: 500px;
+    height: 300px;
+    /* float: left;
+    position: relative;
+    left: 0; */
+}
+.second>.lunbotu>.outer>.kuang>.four>.content4{
+    width: 500px;
+    height: 300px;
+    /* float: left;
+    position: relative;
+    left: 0; */
+}
+.second>.lunbotu>.outer>.kuang>.five>.content5{
+    width: 500px;
+    height: 300px;
+    /* float: left;
+    position: relative;
+    left: 0; */
+}
+.second>.lunbotu>.outer>.kuang>.one>.content1>h1{
+    font-size: 55px;
+    font-weight: 400;
+}
+.second>.lunbotu>.outer>.kuang>.two>.content2>h1{
+    font-size: 55px;
+    font-weight: 400;
+}
+.second>.lunbotu>.outer>.kuang>.three>.content3>h1{
+    font-size: 55px;
+    font-weight: 400;
+}
+.second>.lunbotu>.outer>.kuang>.four>.content4>h1{
+    font-size: 55px;
+    font-weight: 400;
+}
+.second>.lunbotu>.outer>.kuang>.five>.content5>h1{
+    font-size: 55px;
+    font-weight: 400;
+}
+.second>.lunbotu>.outer>.kuang>.one>.content1,.content2,.content3,.content4,.content5>p{
+    font-size: 30px;
+    font-weight: 347;
+}
+.second>.lunbotu>.lader{
+    width:300px;
+    height: 50px;
+    /* position: relative; */
+    /* left: 600px; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 550px;
+    
+}
+.second>.lunbotu>.lader>a{
+    width: 30px;
+    height: 10px;
+    background-color: gray;
+    /* float: left; */
+    margin: 5px;
+    border-radius: 20px;
+}
+.second>.lunbotu>.lader a:hover{
+    width: 40px;
+    background-color: rgb(71, 69, 69) ;
+    transition: 1s;
+}
+.second>.lunbotu>.lader>a:active{
+    width: 40px;
+    /* background-color: black; */
+    transition: 0s;
+}
