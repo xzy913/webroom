@@ -4,7 +4,7 @@
 }
 .center{
     width: 1519px;
-    height: 3200px;
+    height: 3605px;
 }
 .first{
     width: 1519px;
@@ -71,7 +71,7 @@
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 0px;
 }
-.first>.introduce>.black>img{
+.first>.introduce>.black>#myImg{
     width: 470px;
     height: 313px;
     margin-top: 45px;
@@ -80,6 +80,13 @@
     border-top-right-radius: 0px;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 0px;
+}
+.first>.introduce>.black>#myImg2{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    top: -50%;
 }
 .first>.about>.bottom>.floata{
     width: 60px;
@@ -206,4 +213,77 @@
     0%{transform: translateY(0);}
     50%{transform: translateY(-5px);}
     
+}
+/* 查看图片 */
+#myImg,#myImg2 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ 
+#myImg,#myImg2:hover {opacity: 0.7;}
+ 
+/* 弹窗背景 */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: gray; /* Fallback color */
+    background-color: rgb(179, 176, 176,0.5); /* Black w/ opacity */
+}
+ 
+/* 图片 */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/* 添加动画 */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+ 
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+ 
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+ 
+/* 关闭按钮 */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+ 
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+/* 小屏幕中图片宽度为 100% */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }

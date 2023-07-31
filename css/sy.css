@@ -11,6 +11,11 @@
     width: 1519px;
     height: 843.35px;
     position: relative;
+    background-color: black;
+}
+video{
+width: 1519px;
+height: 843.35px;
 }
 .logo>img{
     width: 180px;
@@ -23,7 +28,7 @@
 .wenzi{
     height: 250px;
     position: absolute;
-    bottom: 200px;
+    bottom: 300px;
     left: 35%;
      }
 .wenzi>h1{
@@ -123,37 +128,41 @@
 .circle{
     position: relative;
     left: 40px;
-    top: -100px;
+    top: -200px;
     width: 40px;
     height: 40px;
     border-style: solid;
     border-color: white;
     border-radius: 50%;
-     animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: roll;
+    text-align: center;
 }
-.circle>.a{
-    text-decoration: none;
-    font-size: 30px;
+@keyframes roll{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(10px);}
+}
+.circle span{
     color: white;
-    border-radius: 30%;
-    margin-left: 12px;
-
+    cursor: pointer;
+}
+.circle a{
+    text-decoration: none;
 }
 .sub-line{
     position: relative;
-    top: -90px;
+    top: -200px;
     left: 55px;
     width: 10px;
-    height: 50px;
+    height: 100px;
 }
 .sub-line::after{
     content: "";
     display: block;
     position: relative;
-    height: 36px;
+    height: 170px;
     left: 50%;
     transform: translateX(-150%);
     border-left: 1px dashed #fff;
@@ -166,15 +175,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-@keyframes roll{
-    /* 0%{left: 0px; top: 0px;} */
-    0%{transform: translateY(0);}
-    50%{transform: translateY(-5px);}
-    /* 50%{left: 0px; top: 10px;} */
-    /* 100%{left: 0px; top: 10px} */
-    /* 100%{transform: translate(-50%);} */
-}
-
 .white{
     height: 120px;
 }

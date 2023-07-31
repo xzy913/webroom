@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>加入信管工作室</title>
-    <link rel="stylesheet" href="../firstHomework assets/css/sy.css" />
-    <link rel="stylesheet" href="../firstHomework assets/css/first.css" />
-    <link rel="stylesheet" href="../firstHomework assets/css/second.css" />
-    <link rel="stylesheet" href="../firstHomework assets/css/third.css" />
-    <link rel="stylesheet" href="../firstHomework assets/css/fourth.css" />
-    <link rel="stylesheet" href="../firstHomework assets/css/fifth.css" />
-    <link rel="stylesheet" href="../firstHomework assets/css/end.css" />
+    <link rel="stylesheet" href="./css/sy.css" />
+    <link rel="stylesheet" href="./css/first.css" />
+    <link rel="stylesheet" href="./css/second.css" />
+    <link rel="stylesheet" href="./css/third.css" />
+    <link rel="stylesheet" href="./css/fourth.css" />
+    <link rel="stylesheet" href="./css/fifth.css" />
+    <link rel="stylesheet" href="./css/end.css" />
     <!-- <script type="text/javascript" src="JS/tools.js"></script> -->
   </head>
   <body>
@@ -19,17 +19,16 @@
     <div class="head">
       <!-- 首页盒子 -->
       <div class="sy">
-        <video
+        <!-- <video
           muted
-          src="https://mislab.web.cloudendpoint.cn/static/media/shouyeshipin-little.d7167e47.mp4"
-          width="1519"
-          height="843.35"
+          src="./assets/shouyeshipin-little.mp4"
+        
           autoplay="autoplay"
           loop
-        ></video>
+        ></video> -->
         <!-- 首页盒子中的logo盒子 -->
         <div class="logo">
-          <img src="../firstHomework assets/assets/logo.png" />
+          <img src="./assets/logo.png" />
         </div>
         <!-- 首页盒子中的文字盒子 -->
         <div class="wenzi">
@@ -70,10 +69,10 @@
       </div>
       <!-- 首页盒子中的圆框 -->
       <div class="circle">
-        <!-- <a class="a" href="#first">&#8595;</a> -->
-        <span class="iconfont"></a>
+       <a href="#first"><span class="iconfont">↓</a>
       </div>
       <div class="sub-line"></div>
+      
     </div>
     <!-- head与center的空白部分 -->
     <div class="white"></div>
@@ -94,7 +93,7 @@
             </p>
           </div>
           <div class="bottom">
-            <img src="../firstHomework assets/assets/us.png" />
+            <img src="./assets/us.png" />
             <div class="floata">
               <h3>创新</h3>
               </div>
@@ -134,19 +133,32 @@
           </p>
           <!-- 图片外的黑边框· -->
           <div class="black">
-            <img src="../firstHomework assets/assets/members.png" />
+              <img id="myImg" src="./assets/members.png" />
+              <img id="myImg2" src="./assets/眼睛.png">
+            
+            <div id="myModal" class="modal">
+ 
+              <!-- 关闭按钮 -->
+              <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+             
+              <!-- 弹窗内容 -->
+              <img class="modal-content" id="img01">
+             
+              <!-- 文本描述 -->
+              <div id="caption"></div>
+            </div>
           </div>
         </div>
       </div>
       <!-- 第二个盒子部门介绍 -->
       <div class="second">
         <a name="second"></a>
-        <h1>部门介绍</h1>
         <div class="lunbotu">
           <div class="outer" name="outer">
+            <h1>部门介绍</h1>
             <div id="kuang" name="kuang" class="kuang">
               <div id="page1" class="one" name="p">
-                <img src="../firstHomework assets/assets/qianduan.png" />
+                <img src="./assets/qianduan.png" />
                 <div class="content1">
                   <h1>Web开发部</h1>
                   <p>
@@ -157,7 +169,7 @@
                 </div>
               </div>
               <div id="page2" class="two" name="p">
-                <img src="../firstHomework assets/assets/houduan.png" />
+                <img src="./assets/houduan.png" />
                 <div class="content2">
                   <h1>后端开发部</h1>
                   <p>
@@ -169,7 +181,7 @@
                 </div>
               </div>
               <div id="page3" class="three" name="p">
-                <img src="../firstHomework assets/assets/chanpin.png" />
+                <img src="./assets/chanpin.png" />
                 <div class="content3">
                   <h1>产品设计部</h1>
                   <p>
@@ -181,7 +193,7 @@
                 </div>
               </div>
               <div id="page4" class="four" name="p">
-                <img src="../firstHomework assets/assets/jiqixuexi.png" />
+                <img src="./assets/jiqixuexi.png" />
                 <div class="content4">
                   <h1>机器学习部</h1>
                   <p>
@@ -192,7 +204,7 @@
                 </div>
               </div>
               <div id="page5" class="five" name="p">
-                <img src="../firstHomework assets/assets/anzhuo.png" />
+                <img src="./assets/anzhuo.png" />
                 <div class="content5">
                   <h1>Android开发部</h1>
                   <p>
@@ -203,23 +215,13 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="lader" name="lader">
-            <a id="page11" href="javascript:;" name="pagea">
-              <!-- <div></div> -->
-            </a>
-            <a id="page22" href="javascript:;" name="pagea">
-              <!-- <div></div> -->
-            </a>
-            <a id="page33" href="javascript:;" name="pagea">
-              <!-- <div></div> -->
-            </a>
-            <a id="page44" href="javascript:;" name="pagea">
-              <!-- <div></div> -->
-            </a>
-            <a id="page55" href="javascript:;" name="pagea">
-              <!-- <div></div> -->
-            </a>
+            <div class="btn">
+              <button class="btn1" name="pagea"></button>
+              <button class="btn2" name="pagea"></button>
+              <button class="btn3" name="pagea"></button>
+              <button class="btn4" name="pagea"></button>
+              <button class="btn5" name="pagea"></button>
+            </div>
           </div>
         </div>
       </div>
@@ -237,7 +239,7 @@
             理企业 中的物资流动、资金流动和信息流<br />
             &nbsp;&nbsp;&nbsp;&nbsp;动，以及相互之间的制约与转换关系<br />
           </p>
-          <img src="../firstHomework assets/assets/erp.png" />
+          <img src="./assets/erp.png" />
         </div>
         <div class="tleft">
           <!-- 第三个盒子中的产品介绍盒子 -->
@@ -258,7 +260,7 @@
           </div>
           <!-- 第三个盒子中的邮问必答 -->
           <div class="ywbd">
-            <img src="../firstHomework assets/assets/youwen.png" />
+            <img src="./assets/youwen.png" />
             <!-- 邮问必答中的文字 -->
             <div class="ywenzi">
               <h1>邮问必答</h1>
@@ -288,7 +290,7 @@
               controls
               loop
               muted
-              src="../firstHomework assets/assets/xuezhangcaifang.mp4"
+              src="./assets/xuezhangcaifang.mp4"
             ></video>
           </div>
           <!-- 第四个盒子中的成员动态盒子  -->
@@ -326,27 +328,27 @@
         <div class="fcenter">
           <div class="process">
             <div class="p1">
-              <img src="../firstHomework assets/assets/liucheng1.png" />
+              <img src="./assets/liucheng1.png" />
               <h1>报名/预习</h1>
               <h2>8月中旬——9月中旬</h2>
             </div>
             <!-- 特殊符号箭头 -->
             <div class="arrow1">&#10140;</div>
             <div class="p2">
-              <img src="../firstHomework assets/assets/liucheng2.png" />
+              <img src="./assets/liucheng2.png" />
               <h1>招新/培训</h1>
               <h2>9月中旬——12月中旬</h2>
             </div>
             <div class="arrow2">&#10140;</div>
             <div class="p3">
-              <img src="../firstHomework assets/assets/liucheng3.png" />
+              <img src="./assets/liucheng3.png" />
               <h1>offer/项目</h1>
               <h2>12月中旬——长期</h2>
             </div>
           </div>
           <!-- 第五个盒子中的报名盒子 -->
           <div class="apply">
-            <img src="../firstHomework assets/assets/jiaru.png" />
+            <img src="./assets/jiaru.png" />
             <h1>
               想 &nbsp;和 &nbsp;优 &nbsp;秀 &nbsp;的 &nbsp;你
               &nbsp;&nbsp;&nbsp;一 &nbsp;起 &nbsp;改 &nbsp;变 &nbsp;世 &nbsp;界
@@ -362,7 +364,7 @@
     </div>
     <!-- 尾盒子 -->
     <div class="end">
-      <img class="pic1" src="../firstHomework assets/assets/logo1.png" />
+      <img class="pic1" src="./assets/logo1.png" />
       <!-- 分割线 -->
       <div class="line1"></div>
       <div class="contact">
@@ -391,7 +393,7 @@
         </h1>
       </div>
       <div class="line2"></div>
-      <img class="pic2" src="../firstHomework assets/assets/qrcode.png" />
+      <img class="pic2" src="./assets/qrcode.png" />
       <span>QQ扫码咨询</span>
       <div class="footer">
         <p>
@@ -401,11 +403,11 @@
           邮箱：join@mislab.team
         </p>
         <div class="circle">
-          <a href="#">&#8595;</a>
+          <a href="#"><span class="iconfont" style=" color: black;">↑</span></a>
         </div>
       </div>
     </div>
   </body>
   <!-- <script type="text/javascript" src="JS/tools.js"></script> -->
-  <script src="../firstHomework assets/JS/workroom.js"></script>
+  <script src="./JS/workroom.js"></script>
 </html>
